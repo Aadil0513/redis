@@ -23,6 +23,29 @@ function digitize(n) {
 
 
 
+// solved  above 
+function digitize(n) {
+  //code here
+  let arry =[]
+  
+  let num = n.toString().split("")
+   
+   for(let i = num.length ; i>=0 ; i-- ){
+     
+     arry[i] = +num[i]
+   }
+  
+  return +arry
+}
+
+// solved in short method   
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
+
+
+
 
  
 function findOdd(A) {
